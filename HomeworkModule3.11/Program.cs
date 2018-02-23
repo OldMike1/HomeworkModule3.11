@@ -10,6 +10,17 @@ namespace HomeworkModule3._11
     {
         static void Main(string[] args)
         {
+            int Fib = 0;
+            int dop = 0;
+            for (int i = 1; i <= 50; i++)
+            {
+                Fib = Fib + dop;
+                if (i == 1)
+                    dop++;
+                dop = dop + Fib;
+                Console.WriteLine(Fib);
+                Console.WriteLine(dop);
+            }
         }
     }
 }
